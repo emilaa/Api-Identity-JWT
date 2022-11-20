@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
 using Repository.Repositories.Interfaces;
-using Service.DTO_s.Book;
 using Service.DTO_s.Product;
 using Service.Services.Interfaces;
 

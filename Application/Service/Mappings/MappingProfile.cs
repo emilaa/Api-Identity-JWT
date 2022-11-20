@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTO_s.Account;
 using Service.DTO_s.Book;
+using Service.DTO_s.Category;
 using Service.DTO_s.Product;
 
 namespace Service.Mappings
@@ -10,6 +11,9 @@ namespace Service.Mappings
     {
         public MappingProfile()
         {
+
+            CreateMap<CategoryDTO, Category>();
+
             CreateMap<ProductCreateDTO, Product>();
             CreateMap<Product, ProductListDTO>();
             CreateMap<Product, ProductFindDTO>();

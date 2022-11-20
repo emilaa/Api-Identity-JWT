@@ -1,17 +1,16 @@
-﻿
-using Service.DTO_s.Category;
+﻿using Service.DTO_s.Category;
 using Service.DTO_s.Product;
 
 namespace Service.Services.Interfaces
 {
     public interface ICategoryService
     {
-        Task CreateAsync(CategoryCreateDTO category);
-        Task<List<ProductListDTO>> GetAllAsync();
+        Task CreateAsync(CategoryDTO category);
+        Task<List<CategoryDTO>> GetAllAsync();
         Task DeleteAsync(int id);
         Task SoftDeleteAsync(int id);
-        Task UpdateAsync(int id, ProductUpdateDTO product);
-        Task<ProductFindDTO> GetByIdAsync(int id);
-        Task<List<ProductListDTO>> SearchAsync(string? searchText);
+        Task UpdateAsync(int id, CategoryDTO category);
+        Task<CategoryDTO> GetByIdAsync(int id);
+        Task<List<CategoryDTO>> SearchAsync(string? searchText);
     }
 }

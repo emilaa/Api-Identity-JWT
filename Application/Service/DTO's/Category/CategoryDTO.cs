@@ -1,7 +1,7 @@
 ﻿
 namespace Service.DTO_s.Category
 {
-    public class CategoryListDTO
+    public class CategoryDTO
     {
         public string? Name { get; set; }
     }
